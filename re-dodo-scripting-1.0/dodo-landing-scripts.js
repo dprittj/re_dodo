@@ -4,7 +4,7 @@ window.addEventListener("load", function(e){
         dodoUser: "",
         dodoPass: ""
     };
-// should these be constructors? of a Class?
+
     const ddNew = {
         dodoUser: "",
         dodoPass: "",
@@ -25,11 +25,14 @@ window.addEventListener("load", function(e){
     // buttons
     const loginButton = document.getElementById("loginButton");
     const registerButton = document.getElementById("registerButton");
+    const goButton = document.getElementById("goButton");
 
     // divs
     const visibleDiv = document.getElementById("visibleDiv");
     const regDiv = document.getElementById("registerDiv");
     const loginDiv = document.getElementById("loginDiv");
+
+    // preventDefault();
 
     // listeners
     loginButton.addEventListener("click", function(e){
@@ -42,21 +45,19 @@ window.addEventListener("load", function(e){
         removeForm[1].remove(document.getElementById("loginForm"));
         // console.log(removeForm);
 
-        const submit = document.getElementById("goButton");
+    });
 
-        submit.addEventListener("click", function(){
+    goButton.addEventListener("click", function(e){
             
-            ddData.dodoUser = document.querySelector("input[data-name]").value;
-            ddData.dodoPass = document.querySelector("input[data-pass]").value;
-    
-            localStorage.setItem("login", JSON.stringify(ddData));
-            console.log(ddData);
-    
-            const trailPage = "dd_make_itinerary.html";
-            window.location.replace(trailPage);
-    
-        });
+        ddData.dodoUser = document.querySelector("input[data-name]").value;
+        ddData.dodoPass = document.querySelector("input[data-pass]").value;
 
+        localStorage.setItem("login", JSON.stringify(ddData));
+        console.log(ddData);
+
+        // const thisPage = "dodo-landing-pad.html"
+        const nextPage = "dodo-search.html";
+        window.location.replace(nextPage);
     });
 
     registerButton.addEventListener("click", function(e){
@@ -67,9 +68,9 @@ window.addEventListener("load", function(e){
 
         removeRegister[0].remove(document.getElementById("registerForm"));
 
-        const newUser = document.getElementById("submitRegistration");
+        const submit = document.getElementById("submitRegistration");
 
-        newUser.addEventListener("click", function(e){
+        submit.addEventListener("click", function(e){
     
             ddNew.dodoUser = document.querySelector("input[data-newName]").value;
             ddNew.dodoPass = document.querySelector("input[data-newPass]").value;
@@ -82,8 +83,9 @@ window.addEventListener("load", function(e){
 
             console.log(ddNew);
     
-            const trailPage = "dd_make_itinerary.html";
-            window.location.replace(trailPage)
+            // const thisPage = "dodo-landing-pad.html"
+            const nextPage = "dodo-search.html";
+            window.location.replace(nextPage);
     
         });
 

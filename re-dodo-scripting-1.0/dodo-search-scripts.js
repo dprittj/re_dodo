@@ -26,6 +26,7 @@ window.addEventListener("load", function(e) {
         cost: ""
     };
 
+    e.preventDefault();
 
 // event listeners
 
@@ -82,7 +83,7 @@ window.addEventListener("load", function(e) {
         
 
         // creates variable container that change URLs on submit
-        const goToProfile = window.location.href.replace("dd_make_itinerary.html", "dd_user_profile.html");
+        const goToProfile = window.location.href.replace("dodo-search.html", "display-search-parameters.html");
 
         // changes window to profile URL
         window.location.href = goToProfile;

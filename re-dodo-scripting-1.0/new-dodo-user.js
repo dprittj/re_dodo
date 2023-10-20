@@ -2,7 +2,9 @@ window.addEventListener("DOMContentLoaded", function(load){
 
     const submit = document.getElementById("submit");
 
-    const credentials = localStorage.getItem(JSON.parse(login));
+    // const login = localStorage.getItem("login");
+
+    const credentials = localStorage.getItem(JSON.parse("login"));
     console.log(credentials);
 
     const user = document.getElementById("username");
@@ -34,7 +36,8 @@ window.addEventListener("DOMContentLoaded", function(load){
 
         const sendDetails = localStorage.setItem("userDetails", userDetails);
 
-        const goMakeItinerary = window.location.href.replace("dd_create_user.html", "dd_make_itinerary.html");
+        const nextPage = "dodo-search.html";
+        window.location.href.replace(nextPage);
 
 
     })
