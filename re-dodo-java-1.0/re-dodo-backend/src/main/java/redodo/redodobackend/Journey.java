@@ -8,13 +8,13 @@ public class Journey {
 //    fields
     int coords;
     int radius;
-    Map<String> interests;
+    String interests;
     int cost;
     int stops;
 
 //    constructors
 
-    public Journey (int aCoords, int aRadius, Map<String> aInterests, int aCost, int aStops) {
+    public Journey (int aCoords, int aRadius, String aInterests, int aCost, int aStops) {
         this.coords = aCoords;
         this.radius = aRadius;
         this.interests = aInterests;
