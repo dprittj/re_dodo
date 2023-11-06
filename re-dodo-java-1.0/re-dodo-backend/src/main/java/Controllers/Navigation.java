@@ -11,7 +11,7 @@ public class Navigation {
 //    portal kicks to landing-pad
     @GetMapping("dodo-landing-pad")
     public static String enter(){
-        return "dodo-landing-pad.html";
+        return "dodo-login-register.html";
     }
 
 //  user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER

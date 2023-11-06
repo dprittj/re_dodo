@@ -4,7 +4,7 @@ Gradle-Kotlin
 
 html links need re-naming and re-directing to new package directories!
     dd_create_user.html ---> /re-dodo-html-1.0/new-dodo-user.html
-    dd_landing_page.html ---> /re-dodo-html-1.0/dodo-landing-pad.html
+    dd_landing_page.html ---> /re-dodo-html-1.0/dodo-login-register.html
     dd_make_itinerary.html ---> /re-dodo-html-1.0/dodo-search.html
     dd_sitemap.html ---> re-dodo-html-1.0/???
     dd_user_profile.html ---> re-dodo-html-1.0/???

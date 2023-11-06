@@ -55,7 +55,7 @@ window.addEventListener("load", function(e){
         localStorage.setItem("login", JSON.stringify(ddData));
         console.log(ddData);
 
-        // const thisPage = "dodo-landing-pad.html"
+        // const thisPage = "dodo-login-register.html"
         const nextPage = "dodo-search.html";
         window.location.replace(nextPage);
     });
@@ -83,7 +83,7 @@ window.addEventListener("load", function(e){
 
             console.log(ddNew);
     
-            // const thisPage = "dodo-landing-pad.html"
+            // const thisPage = "dodo-login-register.html"
             const nextPage = "dodo-search.html";
             window.location.replace(nextPage);
     
