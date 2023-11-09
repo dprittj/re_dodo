@@ -1,0 +1,30 @@
+
+1. Model.
+    -Login request: do credentials presented match credentials in DB? Tell controller, yes or no.
+    -Registration request: upon receiving registration data, Create new redodo.redodobackend.Models.UserModel. Tell controller when done.
+    -Itinerary: read form data, run Maps API and other methods on data, then on data compilation success, tell controller; vice cersa, if failure, tell controller.
+
+
+2. View.
+    Login
+    Registration
+    Sitemap
+    Plan New Itinerary
+    View New Itinerary
+
+3. Controller.
+    -Any URL requests, ie. navigation from one page to another:
+        -Sitemap/links.
+    -Login request: send form data to authorization method in Model.
+        -If yes, send user to main landing page after login.
+        -If no, send user back to login page.
+    -Registration requests: send data through model for registration to DB.
+        -On completion, send user to main landing page.
+    -Itinerary form data to itinerary methods in Model.
+        -If successful, send Itinerary compilation data to view for presentation.
+        -If fail, send redodo.redodobackend.Models.UserModel back to Plan New Itinerary page.
+
+
+SEE MIRO AND TRELLO BOARDS!
+    https://miro.com/app/board/uXjVNT38Ocg=/
+    https://trello.com/b/jCUmsCCE/re-dodo
