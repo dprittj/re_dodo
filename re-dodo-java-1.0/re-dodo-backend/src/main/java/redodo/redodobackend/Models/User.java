@@ -1,23 +1,29 @@
 package redodo.redodobackend.Models;
 
-public class UserModel {
+import java.util.Set;
+
+public class User {
 
 //    fields
-    private String username;
-    private int userId;
-    private String password;
-    private String email;
-    private int phone;
-    private int dob;
-    private int homeCoords;
+    private static String username;
+    private static int userId;
+    private static String password;
+    private static String email;
+    private static int phone;
+    private static int dob;
+    private static int homeCoords;
+
+    private static Set<Interest> userInterests;
+
+
 
 //    constructors
 
-    public UserModel() {
+    public User() {
 
     }
 
-    public UserModel(String aUsername, String aPassword, String aEmail, int aPhone, int aDob, int aHomeCoords) {
+    public User(String aUsername, String aPassword, String aEmail, int aPhone, int aDob, int aHomeCoords) {
         this.username = aUsername;
         this.password = aPassword;
         this.email = aEmail;
@@ -27,7 +33,7 @@ public class UserModel {
 
     }
 
-    public UserModel(String aUsername, int aUserId, String aPassword) {
+    public User(String aUsername, int aUserId, String aPassword) {
         this.username = aUsername;
         this.password = aPassword;
         this.userId = aUserId;
