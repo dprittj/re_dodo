@@ -1,17 +1,23 @@
-package Controllers;
+package redodo.redodobackend.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
+
 public class Navigation {
 
-//    From dodo-portal.html, <Enter> :
-//    portal kicks to landing-pad
-    @GetMapping("dodo-landing-pad")
-    public static String enter(){
-        return "dodo-login-register.html";
+    @GetMapping("dodo-main")
+    public String dodo_main(){
+        return "dodo-main";
+    }
+
+//    From dodo-main, <Enter> :
+//    kicks to the login/or/register page
+    @GetMapping("dodo-login-register")
+    public String enter(){
+        return "dodo-login-register";
     }
 
 //  user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER

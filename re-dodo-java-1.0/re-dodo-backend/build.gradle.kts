@@ -16,12 +16,12 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation("org.springframework.boot:spring-boot-starter-thymeleaf:2.7.8")
+	implementation("org.springframework.boot:spring-boot-starter-web:2.7.12")
+//	implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.12")
 	implementation("mysql:mysql-connector-java:5.1.49")
-	developmentOnly("org.springframework.boot:spring-boot-devtools")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	developmentOnly("org.springframework.boot:spring-boot-devtools:2.7.8")
+	testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.8")
 }
 
 tasks.withType<Test> {

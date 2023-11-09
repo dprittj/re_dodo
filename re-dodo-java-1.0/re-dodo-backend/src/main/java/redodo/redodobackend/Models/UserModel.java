@@ -1,4 +1,4 @@
-package Models;
+package redodo.redodobackend.Models;
 
 public class UserModel {
 

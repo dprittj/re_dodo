@@ -1,4 +1,4 @@
-package Controllers;
+package redodo.redodobackend.Controllers;
 
 public class Nest {
 //    this controller class will contain methods for Nest (profile)-related functionality,
