@@ -1,0 +1,78 @@
+/* dodo-main */
+
+.main-img-head {
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid darkgray;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.mini-head {
+    display: flex;
+    width: 100%;
+    border: 2px solid lightgray;
+    /* padding-top: 8px; */
+    /* padding-left: 5px; */
+    font-size: 18px;
+    background-color: rgb(180, 180, 235);
+    /* text-align: left; */
+    justify-items: center;
+}
+
+.mini-head-welcome-text {
+    margin: 5px;
+    padding: 5px;
+}
+
+.enterText {
+    /* flex: 1; */
+    display: inline-block;
+    margin-top: 10px;
+    padding: 1% 5%;
+    font-size: 18px;
+    color: turquoise;
+}
+
+.enterButton {
+    /* flex: 1; */
+    display: inline-block;
+    margin: 5px;
+    padding: 0 5%;
+    font-size: 18px;
+    background-color: black;
+    color: aquamarine;
+}
+
+.explainer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 300px;
+    border: 2px solid darkgray;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.explainer-text {
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border: 2px solid lightblue;
+    font-size: 18px;
+    background-color: lavender;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.explainer-viz {
+    margin: 5px;
+    padding: 0 2%;
+    width: 10%;
+    height: 50%;
+    min-height: 100px;
+    border: 2px dotted black;
+    background-color: lightblue;
+}

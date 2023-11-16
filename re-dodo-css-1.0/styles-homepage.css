@@ -33,7 +33,19 @@
   transition: all 0.3s ease-out;
 }
 
-/* main/top */
+/* dodo-main */
+
+/* .main-img-head {
+    display: flex;
+    width: 100%;
+    border: 2px solid black;
+} */
+
+/* #main-map-img {
+    flex-shrink: 2;
+} */
+
+/* login-register/top */
 
 section {
     display: flex;
