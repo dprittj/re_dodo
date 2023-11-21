@@ -8,7 +8,7 @@ window.addEventListener("load", function(e) {
     const submit = document.getElementById("submit");
 
     // form inputs of data-interests type
-    const interestSelection = document.querySelectorAll("input[data-interest]");
+    const allInterests = document.querySelectorAll("input[data-interest]");
 
     // array for use in function below 
     const interestArray = [];
@@ -31,7 +31,7 @@ window.addEventListener("load", function(e) {
 // event listeners
 
     // loops through each interest 
-    interestSelection.forEach(function(input){
+    allInterests.forEach(function(input){
 
         // click-event listener for interests
         input.addEventListener("click", function(e){
@@ -82,7 +82,7 @@ window.addEventListener("load", function(e) {
         localStorage.setItem("interests", interestArray);
         
 
-        // creates variable container that change URLs on submit
+        // creates variable container for URL change with submit
         const goToProfile = window.location.href.replace("dodo-search.html", "display-search-parameters.html");
 
         // changes window to profile URL

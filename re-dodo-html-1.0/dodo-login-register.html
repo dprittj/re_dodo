@@ -1,103 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DODO Welcome Page</title>
-    <link rel="stylesheet" href="/re-dodo-css-1.0/styles-homepage.css" type="text/css">
-    <script src="/re-dodo-scripting-1.0/dodo-login-scripts.js"></script>
-</head>
-<body>
-    <header>
-        <nav class="nav">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DODO Welcome Page</title>
+        <link rel="stylesheet" href="/re-dodo-css-1.0/styles-homepage.css" type="text/css">
+        <script src="/re-dodo-scripting-1.0/dodo-login-scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">
+                <a href="dodo-login-register.html" class="navlink">Login Page</a>
+                <a href="new-dodo-user.html" class="navlink">Create Profile</a>
+                <a href="dodo-search.html" class="navlink">Make Itinerary</a>
+                <a href="sitemap.html" class="navlink">Sitemap</a>
+            </nav>
+
+        </header>
+        <section>
+            <div class="landingDiv" id="registerForm">
+                <div class="hiddenDiv1" id="registerDiv">
+                    <form action="" method="POST" name="registerFields">
+                        <div>
+                            <label for="username">Username:</label>
+                            <br>
+                            <input type="text" id="username" name="username" placeholder="username" data-newName="newName" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="password">Password:</label>
+                            <br>
+                            <input type="password" id="pass" name="pass" maxlength="16" placeholder="password" data-newPass="newPass" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Email Address:</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="email@domain.com" data-email="email" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="phone">Phone #:</label>
+                            <br>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" data-phone="phone" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="birthdate">Date of Birth:</label>
+                            <br>
+                            <input type="date" id="birth" name="birth" data-birth="birth" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="location">Location:</label>
+                            <br>
+                            <input type="text" id="coords" name="coords" placeholder="Big City, USA" data-coords="coords" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" id="submitRegistration">Register</button>
+                            <br>
+                            <button type="reset" id="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="landingDiv" id="visibleDiv">
+                    <button type="button" class="login" id="loginButton">Login</button>
+                    <br>
+                    <h4 id="or" class="or">or</h4>
+                    <button type="button" class="register" id="registerButton">Register</button>
+                    <h3 id="continue" class="continue">to continue</h3>
+            </div>
+
+            <div class="landingDiv" id="loginForm">
+                <div class="hiddenDiv2" id="loginDiv">
+                    <form action="" method="POST" name="loginFields">
+                        <div>
+                            <br>
+                            <label for="username" id="form-text">Username:</label>
+                            <br>
+                            <input type="text" id="username" name="username" placeholder="username" data-name="name" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="password" id="form-text">Password:</label>
+                            <br>
+                            <input type="password" id="pass" name="pass" maxlength="16" placeholder="password" data-pass="pass" required>
+                        </div>
+                        <br>
+                        <div>
+                            <button type="button" id="goButton">Go</button>
+                            <br>
+                            <button type="reset" id="resetButton">Reset</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
             <a href="dodo-login-register.html" class="navlink">Login Page</a>
             <a href="new-dodo-user.html" class="navlink">Create Profile</a>
             <a href="dodo-search.html" class="navlink">Make Itinerary</a>
             <a href="sitemap.html" class="navlink">Sitemap</a>
-        </nav>
-
-    </header>
-    <section>
-        <div class="landingDiv" id="registerForm">
-            <div class="hiddenDiv1" id="registerDiv">
-                <form action="" method="" name="registerFields">
-                    <div>
-                        <label for="username">Username:</label>
-                        <br>
-                        <input type="text" id="username" name="username" placeholder="username" data-newName="newName" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="password">Password:</label>
-                        <br>
-                        <input type="password" id="pass" name="pass" maxlength="16" placeholder="password" data-newPass="newPass" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email">Email Address:</label>
-                        <br>
-                        <input type="email" id="email" name="email" placeholder="email@domain.com" data-email="email" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="phone">Phone #:</label>
-                        <br>
-                        <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" data-phone="phone" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="birthdate">Date of Birth:</label>
-                        <br>
-                        <input type="date" id="birth" name="birth" data-birth="birth" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="location">Location:</label>
-                        <br>
-                        <input type="text" id="coords" name="coords" placeholder="Big City, USA" data-coords="coords" required>
-                    </div>
-                    <br>
-                    <div>
-                        <button type="submit" id="submitRegistration">Register</button>
-                        <br>
-                        <button type="reset" id="reset">Reset</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="landingDiv" id="visibleDiv">
-                <button type="button" class="login" id="loginButton">Login</button>
-                <br>
-                <h4 id="or" class="or">or</h4>
-                <button type="button" class="register" id="registerButton">Register</button>
-                <h3 id="continue" class="continue">to continue</h3>
-        </div>
-
-        <div class="landingDiv" id="loginForm">
-            <div class="hiddenDiv2" id="loginDiv">
-                <form action="" method="" name="loginFields">
-                    <div>
-                        <br>
-                        <label for="username" id="form-text">Username:</label>
-                        <br>
-                        <input type="text" id="username" name="username" placeholder="username" data-name="name" required>
-                    </div>
-                    <br>
-                    <div>
-                        <label for="password" id="form-text">Password:</label>
-                        <br>
-                        <input type="password" id="pass" name="pass" maxlength="16" placeholder="password" data-pass="pass" required>
-                    </div>
-                    <br>
-                    <div>
-                        <button type="submit" id="goButton">Go</button>
-                        <br>
-                        <button type="reset" id="resetButton">Reset</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-</body>
+        </footer>
+    </body>
 </html>

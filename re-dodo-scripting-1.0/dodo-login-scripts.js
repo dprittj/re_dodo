@@ -25,7 +25,7 @@ window.addEventListener("load", function(e){
     // buttons
     const loginButton = document.getElementById("loginButton");
     const registerButton = document.getElementById("registerButton");
-    const goButton = document.getElementById("goButton");
+
 
     // divs
     const visibleDiv = document.getElementById("visibleDiv");
@@ -37,6 +37,7 @@ window.addEventListener("load", function(e){
     // listeners
     loginButton.addEventListener("click", function(e){
         e.stopPropagation();
+
         visibleDiv.outerHTML = loginDiv.outerHTML;
 
         const removeForm = document.getElementsByClassName("hiddenDiv2");
@@ -45,19 +46,30 @@ window.addEventListener("load", function(e){
         removeForm[1].remove(document.getElementById("loginForm"));
         // console.log(removeForm);
 
-    });
+        const goButton = document.getElementById("goButton");
 
-    goButton.addEventListener("click", function(e){
+        goButton.addEventListener("click", function(e){
             
-        ddData.dodoUser = document.querySelector("input[data-name]").value;
-        ddData.dodoPass = document.querySelector("input[data-pass]").value;
+            ddData.dodoUser = document.querySelector("input[data-name]").value;
+    
+            ddData.dodoPass = document.querySelector("input[data-pass]").value;
+    
+            // console.log("ddData = " + ddData);
+    
+            localStorage.setItem("userAuth", JSON.stringify(ddData));
 
-        localStorage.setItem("login", JSON.stringify(ddData));
-        console.log(ddData);
+            // const userAuth = localStorage.getItem("userAuth");
 
-        // const thisPage = "dodo-login-register.html"
-        const nextPage = "dodo-search.html";
-        window.location.replace(nextPage);
+            // console.log("userAuth = " + userAuth);
+
+            // parseAuth = JSON.parse(userAuth);
+
+            // console.log("parseAuth = " + parseAuth);
+    
+            window.location.replace("dodo-search.html");
+    
+        });
+
     });
 
     registerButton.addEventListener("click", function(e){

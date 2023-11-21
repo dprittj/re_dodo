@@ -21,7 +21,7 @@ function displayInterests(userInts){
 
 }
 
-window.addEventListener("DOMContentLoaded", function(load){
+window.addEventListener("load", function(e){
 
     // interests, preferences retrieval
     const userInterests = localStorage.getItem("interests");

@@ -1,5 +1,12 @@
 /* dodo-main */
 
+nav {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 235);
+}
+
 .main-img-head {
     display: flex;
     width: 100%;
@@ -27,7 +34,6 @@
 }
 
 .enterText {
-    /* flex: 1; */
     display: inline-block;
     margin-top: 10px;
     padding: 1% 5%;
@@ -36,7 +42,6 @@
 }
 
 .enterButton {
-    /* flex: 1; */
     display: inline-block;
     margin: 5px;
     padding: 0 5%;
@@ -75,4 +80,54 @@
     min-height: 100px;
     border: 2px dotted black;
     background-color: lightblue;
+}
+
+.example-container {
+    display: flex;
+    width: 100%;
+    border: 2px solid skyblue;
+    min-height: 200px;
+    background-color: whitesmoke;
+}
+
+.example {
+    flex: 1;
+    border: 2px dotted lightgrey;
+    text-align: center;
+}
+
+.example-map {
+    flex: 1;
+    border: 2px dotted lightgrey;
+    text-align: center;
+}
+
+.re-enter {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+}
+
+.re-enterText {
+    /* flex: 1; */
+    margin-top: 10px;
+    padding: 1% 5%;
+    font-size: 18px;
+    color: black;
+}
+
+.re-enterButton {
+    /* flex: 1; */
+    margin: 5px;
+    padding: 0 5%;
+    font-size: 18px;
+    background-color: black;
+    color: aquamarine;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(180, 180, 235)
 }
