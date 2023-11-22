@@ -126,6 +126,7 @@ nav {
 }
 
 footer {
+    /* position: fixed; */
     display: flex;
     text-align: center;
     justify-content: space-around;
