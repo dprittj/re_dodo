@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@300&display=swap');
+
 /* --- --- --- --- */
 /* --- GLOBAL ---  */
 /* --- --- --- --- */
 
 
 * {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(196, 196, 255);
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+}
+
+body{
+    min-height: 120vh;
 }
 
 
@@ -13,40 +24,53 @@
 /* --- --- --- --- */
 
 
-nav {
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
-    text-align: center;
     justify-content: space-around;
-    position: sticky;
-    top: auto;
-    background-color: rgb(180, 180, 235);
+    text-align: center;
+    align-items: center;
+    padding: 10px 10%;
+    border: solid 2px black;
 }
 
-.navlink {
-    color: rgb(97, 44, 97);
+li, a, button {
+    font-family:'REM', sans-serif;
+    font-weight: 300;
     font-size: 16px;
-    margin: 5px auto 5px;
-    padding: 5px;
-    vertical-align: middle;
+    color:rgb(94, 75, 170);
+    text-decoration: none;
 }
 
-.navlink a:hover {
-    color: goldenrod;
-    transition: all 0.2s ease-out;
+.navlist {
+    list-style: none;
 }
 
-.navlink a:visited,
-.navlink a:link {
-  color: goldenrod;
-  transition: all 0.3s ease-out;
+.navlist li {
+    display: inline-flex;
+    padding: 0px 10px;
 }
+
+
+/* --- --- --- --- */
+/* ---FOOTER ----- */
+/* --- --- --- --- */
 
 footer {
-    /* position: fixed; */
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: rgb(180, 180, 235)
+}
+
+
+/* --- --- --- --- */
+/* ---SITEMAP ---- */
+/* --- --- --- --- */
+
+.sitemap {
+    margin-top: 50px;
 }
 
 
@@ -56,6 +80,7 @@ footer {
 
 
 .main-img-head {
+    margin-top: 50px;
     display: flex;
     width: 100%;
     min-height: 300px;
@@ -68,11 +93,8 @@ footer {
     display: flex;
     width: 100%;
     border: 2px solid lightgray;
-    /* padding-top: 8px; */
-    /* padding-left: 5px; */
     font-size: 18px;
-    background-color: rgb(180, 180, 235);
-    /* text-align: left; */
+    /* background-color: rgb(180, 180, 235); */
     justify-items: center;
 }
 
@@ -86,7 +108,7 @@ footer {
     margin-top: 10px;
     padding: 1% 5%;
     font-size: 18px;
-    color: turquoise;
+    color:rgb(94, 75, 170);
 }
 
 .enterButton {
@@ -138,7 +160,7 @@ footer {
     background-color: whitesmoke;
 }
 
-.example {
+.example-dodo {
     flex: 1;
     border: 2px dotted lightgrey;
     text-align: center;
@@ -154,20 +176,22 @@ footer {
     display: flex;
     background-color: aqua;
     justify-content: center;
+    align-items: center;
 }
 
 .re-enterText {
-    /* flex: 1; */
-    margin-top: 10px;
-    padding: 1% 5%;
+    background-color: aqua;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 1% 2%;
     font-size: 18px;
     color: black;
 }
 
 .re-enterButton {
-    /* flex: 1; */
+    display: inline-block;
     margin: 5px;
-    padding: 0 5%;
+    padding: 1% 5%;
     font-size: 18px;
     background-color: black;
     color: aquamarine;
@@ -181,6 +205,7 @@ footer {
 
 section {
     display: flex;
+    margin-top: 50px;
 }
 
 h1 {
@@ -224,5 +249,64 @@ h1 {
     margin: 20px;
     padding: 10px;
     display: block;
+    text-align: center;
+}
+
+.btns_div {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.btns_li {
+    display: inline;
+    list-style: none;
+}
+
+.btns {
+    padding: 1% 10%;
+}
+
+/* --- --- --- --- */
+/* ---USER NEST--- */
+/* --- --- --- --- */
+
+.nest-head {
+    margin-top: 50px;
+    display: flex;
+    min-height: 300px;
+    width: 100%;
+    border: 2px solid darkgray;
+    background-color: lightgray;
+    justify-content: center;
+}
+
+.profile-welcome {
+    display: flex;
+    width: 100%;
+    border: 2px solid lightgray;
+    font-size: 24px;
+    /* background-color: rgb(180, 180, 235); */
+    /* justify-items: center; */
+    /* text-align: center; */
+}
+
+.nest-peripheries {
+    display: flex;
+    width: 100%;
+    border: 2px solid skyblue;
+    min-height: 200px;
+    background-color: whitesmoke;
+}
+
+.past-adventures {
+    flex: 1;
+    border: 2px dotted lightgrey;
+    text-align: center;
+}
+
+.time-weather-widget {
+    flex: 1;
+    border: 2px dotted lightgrey;
     text-align: center;
 }

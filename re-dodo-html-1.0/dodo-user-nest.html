@@ -4,26 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="/re-dodo-css-1.0/styles-main.css" type="text/css">
+        <link rel="stylesheet" href="/re-dodo-css-1.0/styles-homepage.css" type="text/css">
         <script src="/re-dodo-scripting-1.0/dodo-user-nest.js"></script>
     </head>
     <body>
-        <nav>
-            <a href="dodo-home.html" class="navlink">Home</a>
-            <a href="dodo-login-register.html" class="navlink">Login Page</a>
-            <a href="dodo-user-nest.html" class="navlink">Your Nest</a>
-            <a href="new-dodo-user.html" class="navlink">New User</a>
-            <a href="new-user-profile-build.html" class="navlink">New Profile</a>
-            <a href="dodo-search.html" class="navlink">New DODO Adventure</a>
-            <a href="sitemap.html" class="navlink">Sitemap</a>
-        </nav>
-        <div class="nest-img-head">
+        <header>
+            <nav>
+                <!-- <div class="navdiv"> -->
+                    <ul class="navlist">
+                        <li><a href="dodo-home.html" class="navlink">Home</a></li>
+                        <li><a href="dodo-login-register.html" class="navlink">Login Page</a></li>
+                        <li><a href="dodo-user-nest.html" class="navlink">Your Nest</a></li>
+                        <li><a href="new-dodo-user.html" class="navlink">New User</a></li>
+                        <li><a href="new-user-profile-build.html" class="navlink">New Profile</a></li>
+                        <li><a href="dodo-search.html" class="navlink"><button>GO DODO</button></a></li>
+                    </ul>
+                <!-- </div> -->
+            </nav>
+        </header>
+        <div class="nest-head">
             Nest Image Header here
-            <button class="gogoDODO" id="gogoDODO1">Go Go Dodo!</button>
+            <!-- <button class="DODO-btn" id="gogoDODO1">Go Go Dodo!</button> -->
         </div>
         <div class="profile-welcome">
             Hello, [username]!
-            <br>
             Welcome to your DODO Nest.
         </div>
         <div class="userInterests" data-interests="userInterests" style="color:blue">
@@ -32,13 +36,15 @@
             </h2>
             <button class="update-interests" id="update-interests" type="button">Update Interests</button>
         </div>
-        <div class="time-weather-widget">
-            
+        <div class="nest-peripheries">
+            <div class="past-adventures">Past Adventures
+                <button class="view-more" id="view-more" type="button">See More</button>
+            </div>
+            <div class="time-weather-widget">
+                Time/Weather
+            </div>
         </div>
-        <div class="past-adventures">
-            <button class="view-more" id="view-more" type="button">See More</button>
-        </div>
-        <button class="gogoDODO" id="gogoDODO2" type="button">Go Go Dodo!</button>
+        <button class="dodo-btn" id="gogoDODO2" type="button">Go DOOO</button>
 
         <br>
         <footer>
