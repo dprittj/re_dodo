@@ -47,6 +47,13 @@ window.addEventListener("load", function(e){
         // console.log(removeForm);
 
         const goButton = document.getElementById("goButton");
+        const backButton = document.getElementById("return-btn2");
+
+        backButton.addEventListener("click", function(){
+
+            window.location.replace("dodo-login-register.html");
+
+        });
 
         goButton.addEventListener("click", function(e){
             
@@ -66,7 +73,7 @@ window.addEventListener("load", function(e){
 
             // console.log("parseAuth = " + parseAuth);
     
-            window.location.replace("dodo-search.html");
+            window.location.replace("dodo-user-nest.html");
     
         });
 
@@ -81,6 +88,13 @@ window.addEventListener("load", function(e){
         removeRegister[0].remove(document.getElementById("registerForm"));
 
         const submit = document.getElementById("submitRegistration");
+        const backButton = document.getElementById("return-btn1");
+
+        backButton.addEventListener("click", function(){
+
+            window.location.replace("dodo-login-register.html");
+
+        });
 
         submit.addEventListener("click", function(e){
     
@@ -96,7 +110,7 @@ window.addEventListener("load", function(e){
             console.log(ddNew);
     
             // const thisPage = "dodo-login-register.html"
-            const nextPage = "dodo-search.html";
+            const nextPage = "new-user-profile-build.html";
             window.location.replace(nextPage);
     
         });

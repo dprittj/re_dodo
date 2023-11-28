@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=, initial-scale=1.0">
         <title>Document</title>
-        <script src="/re-dodo-scripting-1.0/dodo-search-scripts.js"></script>
         <link rel="stylesheet" href="/re-dodo-css-1.0/styles-homepage.css" type="text/css">
+        <script src="/re-dodo-scripting-1.0/new-profile-builder.js"></script>
     </head>
     <body>
         <header>
@@ -22,54 +22,17 @@
                 <!-- </div> -->
             </nav>
         </header>
-        <div class="h1h2">
-            <h1>Welcome</h1>
-            <h2>Select your DODO preferences:</h2>
+        <div class="main-img-head">
+            Nest Image Header here
         </div>
-        <div class="page-main">
-            <form action="" method="POST">
-                <!-- <form action="dd_user_profile.html" method="POST"> -->
-        <!-- location -->
-                <div>
-                    <label for="location"><strong>Location:</strong></label>
-                    <input type="text" id="coords" name="coords" placeholder="Big City, USA" data-location="userLocation" required>
-                </div>
-                <br>
-        <!-- number of 'stops' or itinerary 'items' -->
-                <div class="numStops">
-                    <label for="stops"><strong>How many points of interest:</strong></label>
-                    <input type="number" id="stops" name="stops" min="1" max="5" value="0" data-stops="stops" required>
-                </div>
-                <br>
-        <!-- cost preferences -->
-                <div class="cost">
-                    <label for="cost"><strong>What is the maximum you would be willing to spend during each stop?</strong></label>
-                    <br>
-
-                    <input type="radio" id="0" name="cost" value="0" data-cost="0" class="cost">
-                    <label for="0"> No Preference</label>
-                    <br>
-
-                    <input type="radio" id="$" name="cost" value="$" data-cost="$" class="cost">
-                    <label for="$"> $ (each stop may require little to no cost)</label>
-                    <br>
-
-                    <input type="radio" id="$$" name="cost" value="$$" data-cost="$$" class="cost">
-                    <label for="$$"> $$ (each stop may require some small minimum)</label>
-                    <br>
-
-                    <input type="radio" id="$$$" name="cost" value="$$$" data-cost="$$$" class="cost">
-                    <label for="$$$"> $$$ (each stop may require some cost)</label>
-                    <br>
-
-                    <input type="radio" id="$$$$" name="cost" value="$$$$" data-cost="$$$$" class="cost">
-                    <label for="$$$$"> $$$$ (each stop could be a considerable cost)</label>
-                </div>
-                <br>
-        <!-- interests checkboxes -->
-                <div class="interests">
-                    <label><strong>Select your interests:</strong></label>
-                    <br>
+        <div class="profile-welcome">
+            <h2>Update Your Interests!</h2>
+        </div>
+        <label><strong><h3>Select your interests:</h3></strong></label>
+        <br>
+        <form method="POST" action="" name="profile-builder-interests">
+            <div class="interest-builder">
+                <div class="list">
                     <label for="interests">Visual Arts</label>
                     <input type="checkbox" id="art" name="art" data-interest="art" unchecked>
                     <br>
@@ -114,13 +77,14 @@
                     <br>
                     <label for="interests">Events</label>
                     <input type="checkbox" id="events" name="events" data-interest="events" unchecked>
+                
                 </div>
-                <div>
-                    <button type="button" id="submit">Send Me A DODO</button>
+                <div class="list-btns">
+                    <button type="button" id="saveInterests">Save & Continue</button>
                     <input type="reset" id="reset">
                 </div>
-            </form>
-        </div>
+            </div>
+        </form>
         <br>
         <footer>
             <a href="dodo-home.html" class="footer-link">Home</a>
@@ -131,5 +95,6 @@
             <a href="dodo-search.html" class="footer-link">New DODO Adventure</a>
             <a href="sitemap.html" class="footer-link">Sitemap</a>
         </footer>
+        
     </body>
 </html>

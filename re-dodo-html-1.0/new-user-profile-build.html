@@ -22,19 +22,21 @@
                 <!-- </div> -->
             </nav>
         </header>
-        <div class="nest-img-head">
+        <div class="main-img-head">
             Nest Image Header here
         </div>
         <div class="profile-welcome">
-            Hello, [username]!
+            <h2>Welcome to the DODO Nest.</h2> 
             <br>
-            Welcome to your personal DODO Nest.
+            All your DODO journeys will start from here, but first we need to hear a little bit more about you. 
+            <br>
+            Tell us what some of your interests are so we can capture what it is you're looking for in a DODO.
         </div>
+        <label><strong><h3>Select your interests:</h3></strong></label>
+        <br>
         <form method="POST" action="" name="profile-builder-interests">
             <div class="interest-builder">
-                <div class="interest-checkbox-list">
-                    <label><strong>Select your interests:</strong></label>
-                    <br>
+                <div class="list">
                     <label for="interests">Visual Arts</label>
                     <input type="checkbox" id="art" name="art" data-interest="art" unchecked>
                     <br>
@@ -79,8 +81,9 @@
                     <br>
                     <label for="interests">Events</label>
                     <input type="checkbox" id="events" name="events" data-interest="events" unchecked>
+                
                 </div>
-                <div>
+                <div class="list-btns">
                     <button type="button" id="saveInterests">Save & Continue</button>
                     <input type="reset" id="reset">
                 </div>

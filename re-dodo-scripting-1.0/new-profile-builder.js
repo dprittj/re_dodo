@@ -2,6 +2,8 @@ window.addEventListener("load", function(e){
 
     const saveBtn = document.getElementById("saveInterests");
 
+    const resetBtn = document.getElementById("reset");
+
     const allInterests = document.querySelectorAll("input[data-interest]");
 
     const interestArray = [];
@@ -25,6 +27,12 @@ window.addEventListener("load", function(e){
             };
         });
     });
+
+    resetBtn.addEventListener("click", function(){
+
+        interestArray.splice(0);
+        console.log(interestArray);
+    })
 
     saveBtn.addEventListener("click", function(e){
 

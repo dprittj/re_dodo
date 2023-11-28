@@ -16,7 +16,7 @@ function displayInterests(userInts){
 
 window.addEventListener("load", function(e){
 
-    const dodoBtn1 = document.getElementById("gogoDODO1");
+    const dodoBtn1 = document.getElementById("dodo-btn1");
     // const dodoBtn = document.querySelectorAll("#gogoDODO", "#gogoDODO2");
     const moreBtn = document.getElementById("view-more");
     const updateBtn = document.getElementById("update-interests");
@@ -48,7 +48,7 @@ window.addEventListener("load", function(e){
 
     updateBtn.addEventListener("click", function(e){
 
-        window.location.href = "new-user-profile-build.html";
+        window.location.href = "interests-update.html";
 
     });
 
