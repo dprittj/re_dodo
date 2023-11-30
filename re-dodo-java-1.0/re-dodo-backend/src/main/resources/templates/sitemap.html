@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DODO: Your Day Off/Day Out Planner</title>
+    <script th:src="@{script.js}"></script>
+    <link rel="stylesheet" th:href="@{styles.css}" type="text/css"/>
+
+</head>
+<body style="visibility: hidden">
+<header th:replace="fragments :: header"></header>
+<script>0</script>
+<div class="sitemap">
+    <h1>Sitemap</h1>
+    <a href="homenest.html" th:href="@{homenest}" class="navlink">Home</a>
+    <br>
+    <a href="login.html" th:href="@{login}" class="navlink">Login Page</a>
+    <br>
+    <a href="usernest.html" th:href="@{usernest}" class="navlink">Your Nest</a>
+    <br>
+    <a href="new-dodo-user.html" class="navlink">New User</a>
+    <br>
+    <a href="new-user-profile-build.html" class="navlink">New Profile</a>
+    <br>
+    <a href="dodo-search.html" class="navlink">New DODO Adventure</a>
+    <br>
+    <a href="display-search-parameters.html" class="navlink">DODO Search Results</a>
+    <br>
+    <a href="sitemap.html" th:href="@{sitemap}" class="navlink">Sitemap</a>
+</div>
+<br>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

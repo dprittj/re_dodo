@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DODO: Your Day Off/Day Out Planner</title>
+    <script th:src="@{script.js}"></script>
+    <link rel="stylesheet" th:href="@{styles.css}" type="text/css"/>
+
+</head>
+<body style="visibility: hidden">
+<script>0</script>
+<header th:replace="fragments :: header"></header>
+
+<div class="nest-head">
+    Nest Image Header here
+    <!-- <button class="DODO-btn" id="gogoDODO1">Go Go Dodo!</button> -->
+</div>
+<div class="profile-welcome">
+    <h2>Welcome to the DODO Nest</h2>
+    Your DODO journey starts here
+</div>
+<div class="userInterests" data-interests="userInterests">
+    <h2 class="selections">
+        Your Interests:
+    </h2>
+    <button class="update-interests" id="update-interests" type="button">Update Interests</button>
+</div>
+<div class="nest-peripheries">
+    <div class="past-adventures">Past Adventures
+        <button class="view-more" id="view-more" type="button">See More</button>
+    </div>
+    <div class="time-weather-widget">
+        Time/Weather
+    </div>
+</div>
+<button class="dodo-btn" id="gogoDODO2" type="button">Go DOOO</button>
+<br>
+<footer th:replace="fragments :: footer"></footer>
+
+</body>
+</html>
