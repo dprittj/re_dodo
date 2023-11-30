@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org/">
-<head>
-    <meta charset="UTF-8"/>
-    <title></title>
-</head>
-<body>
-<header th:fragment="dodo-header">
-    <nav>
-        <a href="dodo-login-register.html" class="navlink">Login Page</a>
-        <a href="new-dodo-user.html" class="navlink">Create Profile</a>
-        <a href="dodo-search.html" class="navlink">Make Itinerary</a>
-        <a href="sitemap.html" class="navlink">Sitemap</a>
-    </nav>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DODO: Your Day Off/Day Out Planner</title>
+        <script th:src="@{script.js}"></script>
+        <link rel="stylesheet" th:href="@{styles.css}" type="text/css" />
 
-</header>
+    </head>
+    <body style="visibility: hidden">
+        <script>0</script>
 
+        <header th:fragment="header">
+            <nav>
+                <ul class="navlist">
+                    <li><a href="homenest.html" th:href="@{homenest}" class="navlink">Home</a></li>
+                    <li><a href="login.html" th:href="@{login}" class="navlink">Login Page</a></li>
+                    <li><a href="usernest.html" th:href="@{usernest}" class="navlink">Your Nest</a></li>
+                    <li><a href="new-dodo-user.html" th:href="@{}" class="navlink">New User</a></li>
+                    <li><a href="new-user-profile-build.html" th:href="@{}" class="navlink">New Profile</a></li>
+                    <li><a href="dodo-search.html" th:href="@{}" class="navlink"><button>GO DODO</button></a></li>
+                </ul>
+                <!-- </div> -->
+            </nav>
+        </header>
+
+        <footer th:fragment="footer">
+            <a href="homenest.html" th:href="@{homenest}" class="footer-link">Home</a>
+            <a href="login.html" th:href="@{login}" class="footer-link">Login Page</a>
+            <a href="usernest.html" th:href="@{usernest}" class="footer-link">Your Nest</a>
+            <a href="new-dodo-user.html" th:href="@{}" class="footer-link">New User</a>
+            <a href="new-user-profile-build.html" th:href="@{}" class="footer-link">New Profile</a>
+            <a href="dodo-search.html" th:href="@{}" class="footer-link">New DODO Adventure</a>
+            <a href="sitemap.html" th:href="@{sitemap}" class="footer-link">Sitemap</a>
+        </footer>
 </body>
 </html>

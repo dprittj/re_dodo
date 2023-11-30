@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public class Navigation {
 
-    @GetMapping("/")
+    @GetMapping("dodo-main")
     public String dodo_main(){
-        return "dodo-home";
+        return "dodo-main";
     }
 
 //    From dodo-main, <Enter> :
