@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public class Navigation {
 
-    @GetMapping("dodo-main")
+    @GetMapping()
     public String dodo_main(){
-        return "dodo-main";
+        return "homenest";
     }
 
 //    From dodo-main, <Enter> :
 //    kicks to the login/or/register page
-    @GetMapping("dodo-login-register")
+    @GetMapping("/login")
     public String enter(){
-        return "dodo-login-register";
+        return "login";
     }
 
 //  user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
