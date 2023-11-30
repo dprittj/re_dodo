@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DODO: Your Day Off/Day Out Planner</title>
+    <script th:src="@{script.js}"></script>
+    <link rel="stylesheet" th:href="@{styles.css}" type="text/css"/>
+
+</head>
+<body style="visibility: hidden">
+<script>0</script>
+<header th:replace="fragments :: header"></header>
+<div class="h1h2">
+    <h1>Welcome</h1>
+    <h2>Select your DODO preferences:</h2>
+</div>
+<div class="page-main">
+    <form action="" method="POST">
+        <!-- <form action="dd_user_profile.html" method="POST"> -->
+        <!-- location -->
+        <div>
+            <label><strong>Location:</strong></label>
+            <input type="text" id="coords" name="coords" placeholder="Big City, USA" data-location="userLocation" required>
+        </div>
+        <br>
+        <!-- number of 'stops' or itinerary 'items' -->
+        <div class="numStops">
+            <label for="stops"><strong>How many points of interest:</strong></label>
+            <input type="number" id="stops" name="stops" min="1" max="5" value="0" data-stops="stops" required>
+        </div>
+        <br>
+        <!-- cost preferences -->
+        <div class="cost">
+            <label><strong>What is the maximum you would be willing to spend during each stop?</strong></label>
+            <br>
+
+            <input type="radio" id="0" name="cost" value="0" data-cost="0" class="cost">
+            <label for="0"> No Preference</label>
+            <br>
+
+            <input type="radio" id="$" name="cost" value="$" data-cost="$" class="cost">
+            <label for="$"> $ (each stop may require little to no cost)</label>
+            <br>
+
+            <input type="radio" id="$$" name="cost" value="$$" data-cost="$$" class="cost">
+            <label for="$$"> $$ (each stop may require some small minimum)</label>
+            <br>
+
+            <input type="radio" id="$$$" name="cost" value="$$$" data-cost="$$$" class="cost">
+            <label for="$$$"> $$$ (each stop may require some cost)</label>
+            <br>
+
+            <input type="radio" id="$$$$" name="cost" value="$$$$" data-cost="$$$$" class="cost">
+            <label for="$$$$"> $$$$ (each stop could be a considerable cost)</label>
+        </div>
+        <br>
+        <!-- interests checkboxes -->
+        <div class="interests">
+            <label><strong>Select your interests:</strong></label>
+            <br>
+            <label>Visual Arts</label>
+            <input type="checkbox" id="art" name="art" data-interest="art">
+            <br>
+            <label>Music</label>
+            <input type="checkbox" id="music" name="music" data-interest="music">
+            <br>
+            <label>Nature/Outdoors</label>
+            <input type="checkbox" id="nature" name="nature" data-interest="nature">
+            <br>
+            <label>Gaming</label>
+            <input type="checkbox" id="gaming" name="gaming" data-interest="gaming">
+            <br>
+            <label>Sports</label>
+            <input type="checkbox" id="sports" name="sports" data-interest="sports">
+            <br>
+            <label>Night Life</label>
+            <input type="checkbox" id="night" name="night" data-interest="night">
+            <br>
+            <label>History</label>
+            <input type="checkbox" id="history" name="history" data-interest="history">
+            <br>
+            <label>Science/Technology</label>
+            <input type="checkbox" id="science" name="science" data-interest="science">
+            <br>
+            <label>Culture</label>
+            <input type="checkbox" id="culture" name="culture" data-interest="culture">
+            <br>
+            <label>Fashion</label>
+            <input type="checkbox" id="fashion" name="fashion" data-interest="fashion">
+            <br>
+            <label>Books</label>
+            <input type="checkbox" id="books" name="books" data-interest="books">
+            <br>
+            <label>Movies/Film</label>
+            <input type="checkbox" id="movies" name="movies" data-interest="movies">
+            <br>
+            <label>Health/Wellness</label>
+            <input type="checkbox" id="health" name="health" data-interest="health">
+            <br>
+            <label>Food</label>
+            <input type="checkbox" id="food" name="food" data-interest="food">
+            <br>
+            <label>Events</label>
+            <input type="checkbox" id="events" name="events" data-interest="events">
+        </div>
+        <div>
+            <button type="button" id="submit">Send Me A DODO</button>
+            <input type="reset" id="reset">
+        </div>
+    </form>
+</div>
+<br>
+<footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

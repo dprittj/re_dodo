@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee710f2-08d3-4e9e-83b5-26348a45c93c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/sitemap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/usernest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/newdodo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/newuser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/styles-homepage.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/fragments.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public class Navigation {
 
-//    GETs to each page: home, sitemap, login, usernest
+//    GETs to each page: home, sitemap, login, usernest, newuser
 
     @GetMapping()
     public String displayHomepageRoot(){
@@ -30,7 +30,6 @@ public class Navigation {
         return "login";
     }
 
-
     // LOGIN: user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
     @GetMapping("/usernest")
     public static String goToProfile(String username, Integer userId, String userProfile){
@@ -38,6 +37,15 @@ public class Navigation {
         return "usernest";
     }
 
+    @GetMapping("/newuser")
+    public String displayNewUserPage() {
+        return "newuser";
+    }
+
+    @GetMapping("/newdodo")
+    public String displayNewDodoPage(){
+        return "newdodo";
+    }
 
     // LOGIN: user enters data for POST-request to Data controller:
     @PostMapping("dodo-landing-pad/profile")
