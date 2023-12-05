@@ -30,13 +30,6 @@ public class Navigation {
         return "login";
     }
 
-//  LOGIN: user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
-    @GetMapping("/usernest")
-    public static String goToProfile(String username, Integer userId, String userProfile){
-        // NEEDS: retrieve user data via data-controller, and populate dodo-user-nest via Nest controller
-        return "usernest";
-    }
-
     @GetMapping("/profilebuild")
     public String displayProfileBuilderPage(){
         return "profilebuild";
@@ -53,6 +46,13 @@ public class Navigation {
     //        return "newuser";
     //    }
 
+
+//  LOGIN: user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
+    @GetMapping("/usernest")
+    public static String goToProfile(String username, Integer userId, String userProfile){
+        // NEEDS: retrieve user data via data-controller, and populate dodo-user-nest via Nest controller
+        return "usernest";
+    }
 
 //  LOGIN: user enters data for POST-request to Data controller:
     @PostMapping("dodo-landing-pad/profile")

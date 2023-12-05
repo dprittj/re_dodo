@@ -81,7 +81,9 @@ window.addEventListener("load", function(){
 
             // console.log("parseAuth = " + parseAuth);
 
-            window.location.replace("usernest");
+//            window.location.replace("usernest");
+
+
 
         });
 
