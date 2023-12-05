@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DODO: Your Day Off/Day Out Planner</title>
+    <script th:src="@{script.js}"></script>
+    <link rel="stylesheet" th:href="@{styles.css}" type="text/css"/>
+
+</head>
+<body style="visibility: hidden">
+<script>0</script>
+
+    <header th:replace="fragments :: header"></header>
+    <div class="main-img-head">
+        Nest Image Header here
+    </div>
+    <div class="profile-welcome">
+        <h2>Welcome to the DODO Nest.</h2>
+        <br>
+        All your DODO journeys will start from here, but first we need to hear a bit more about you.
+        <br>
+        Tell us what some of your interests are so we can capture what it is you're looking for in a DODO.
+    </div>
+
+    <form method="POST" action="" name="profile-builder-interests">
+        <div class="interest-builder">
+            <div class="list" th:replace="fragments :: interests-list"></div>
+        </div>
+    </form>
+    <br>
+    <footer th:replace="fragments :: footer"></footer>
+</body>
+</html>

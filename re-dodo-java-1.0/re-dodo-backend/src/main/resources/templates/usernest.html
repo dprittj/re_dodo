@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DODO: Your Day Off/Day Out Planner</title>
-    <script th:src="@{script.js}"></script>
+    <script th:src="@{/dodoscripts/usernest.js}"></script>
     <link rel="stylesheet" th:href="@{styles.css}" type="text/css"/>
 
 </head>
@@ -17,8 +17,8 @@
     <!-- <button class="DODO-btn" id="gogoDODO1">Go Go Dodo!</button> -->
 </div>
 <div class="profile-welcome">
-    <h2>Welcome to the DODO Nest</h2>
-    Your DODO journey starts here
+    <h2>Welcome to Your DODO Nest</h2>
+    where every DODO journey starts
 </div>
 <div class="userInterests" data-interests="userInterests">
     <h2 class="selections">
@@ -34,7 +34,7 @@
         Time/Weather
     </div>
 </div>
-<button class="dodo-btn" id="gogoDODO2" type="button">Go DOOO</button>
+<button class="dodo-btn" id="goDodo" type="button">Go DODO</button>
 <br>
 <footer th:replace="fragments :: footer"></footer>
 

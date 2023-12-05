@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 public class Navigation {
 
-//    GETs to each page: home, sitemap, login, usernest, newuser
+//  GETs to each page: home (homenest), sitemap, login, usernest, profilebuild, newdodo
 
     @GetMapping()
     public String displayHomepageRoot(){
@@ -30,16 +30,16 @@ public class Navigation {
         return "login";
     }
 
-    // LOGIN: user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
+//  LOGIN: user either enters credentials (login) or registers; if entering credentials see LOGIN immediately below; if registering, go down to REGISTER
     @GetMapping("/usernest")
     public static String goToProfile(String username, Integer userId, String userProfile){
         // NEEDS: retrieve user data via data-controller, and populate dodo-user-nest via Nest controller
         return "usernest";
     }
 
-    @GetMapping("/newuser")
-    public String displayNewUserPage() {
-        return "newuser";
+    @GetMapping("/profilebuild")
+    public String displayProfileBuilderPage(){
+        return "profilebuild";
     }
 
     @GetMapping("/newdodo")
@@ -47,7 +47,14 @@ public class Navigation {
         return "newdodo";
     }
 
-    // LOGIN: user enters data for POST-request to Data controller:
+    //    New User mapping and link deactivated/commented out as page is redundant; see Registration
+    //    @GetMapping("/newuser")
+    //    public String displayNewUserPage() {
+    //        return "newuser";
+    //    }
+
+
+//  LOGIN: user enters data for POST-request to Data controller:
     @PostMapping("dodo-landing-pad/profile")
     public static void login(String username, String password){
     //  1.0    send to data-controller for verification; and:
@@ -68,7 +75,7 @@ public class Navigation {
     }
 
 
-    // REGISTER
+//  REGISTER
     @PostMapping("dodo-landing-pad/register")
     public static void newUser(){
     //  kick to createNew data-controller;

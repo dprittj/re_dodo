@@ -211,7 +211,7 @@
 
  section {
      display: flex;
-     margin-top: 50px;
+     margin-top: 70px;
  }
 
  h1 {
@@ -224,15 +224,17 @@
      text-align: center;
  }
 
- .login {
+ .login-door {
      margin-top: 40px;
+     margin-bottom: 15px;
      padding: 2% 15%;
      font-size: 36px;
      background-color: aquamarine;
  }
 
- .register {
-     margin-top: 10px;
+ .register-door {
+     margin-top: 15px;
+     margin-bottom: 15px;
      padding: 1% 5%;
      font-size: 36px;
      background-color: black;
@@ -269,8 +271,9 @@
      list-style: none;
  }
 
- .btns {
+ .go-back-reset-btns {
      padding: 1% 10%;
+     margin: 10px;
  }
 
 

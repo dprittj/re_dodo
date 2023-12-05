@@ -56,58 +56,59 @@
         </div>
         <br>
         <!-- interests checkboxes -->
-        <div class="interests">
-            <label><strong>Select your interests:</strong></label>
-            <br>
-            <label>Visual Arts</label>
-            <input type="checkbox" id="art" name="art" data-interest="art">
-            <br>
-            <label>Music</label>
-            <input type="checkbox" id="music" name="music" data-interest="music">
-            <br>
-            <label>Nature/Outdoors</label>
-            <input type="checkbox" id="nature" name="nature" data-interest="nature">
-            <br>
-            <label>Gaming</label>
-            <input type="checkbox" id="gaming" name="gaming" data-interest="gaming">
-            <br>
-            <label>Sports</label>
-            <input type="checkbox" id="sports" name="sports" data-interest="sports">
-            <br>
-            <label>Night Life</label>
-            <input type="checkbox" id="night" name="night" data-interest="night">
-            <br>
-            <label>History</label>
-            <input type="checkbox" id="history" name="history" data-interest="history">
-            <br>
-            <label>Science/Technology</label>
-            <input type="checkbox" id="science" name="science" data-interest="science">
-            <br>
-            <label>Culture</label>
-            <input type="checkbox" id="culture" name="culture" data-interest="culture">
-            <br>
-            <label>Fashion</label>
-            <input type="checkbox" id="fashion" name="fashion" data-interest="fashion">
-            <br>
-            <label>Books</label>
-            <input type="checkbox" id="books" name="books" data-interest="books">
-            <br>
-            <label>Movies/Film</label>
-            <input type="checkbox" id="movies" name="movies" data-interest="movies">
-            <br>
-            <label>Health/Wellness</label>
-            <input type="checkbox" id="health" name="health" data-interest="health">
-            <br>
-            <label>Food</label>
-            <input type="checkbox" id="food" name="food" data-interest="food">
-            <br>
-            <label>Events</label>
-            <input type="checkbox" id="events" name="events" data-interest="events">
-        </div>
-        <div>
-            <button type="button" id="submit">Send Me A DODO</button>
-            <input type="reset" id="reset">
-        </div>
+        <div th:replace="fragments :: interests-list"></div>
+<!--        <div class="interests">-->
+<!--            <label><strong> Select your interests: </strong></label>-->
+<!--            <br>-->
+<!--            <label> Visual Arts </label>-->
+<!--            <input type="checkbox" id="art" name="art" data-interest="art">-->
+<!--            <br>-->
+<!--            <label> Music </label>-->
+<!--            <input type="checkbox" id="music" name="music" data-interest="music">-->
+<!--            <br>-->
+<!--            <label> Nature/Outdoors </label>-->
+<!--            <input type="checkbox" id="nature" name="nature" data-interest="nature">-->
+<!--            <br>-->
+<!--            <label> Gaming </label>-->
+<!--            <input type="checkbox" id="gaming" name="gaming" data-interest="gaming">-->
+<!--            <br>-->
+<!--            <label> Sports </label>-->
+<!--            <input type="checkbox" id="sports" name="sports" data-interest="sports">-->
+<!--            <br>-->
+<!--            <label> Night Life </label>-->
+<!--            <input type="checkbox" id="night" name="night" data-interest="night">-->
+<!--            <br>-->
+<!--            <label> History </label>-->
+<!--            <input type="checkbox" id="history" name="history" data-interest="history">-->
+<!--            <br>-->
+<!--            <label>  Science/Technology </label>-->
+<!--            <input type="checkbox" id="science" name="science" data-interest="science">-->
+<!--            <br>-->
+<!--            <label> Culture </label>-->
+<!--            <input type="checkbox" id="culture" name="culture" data-interest="culture">-->
+<!--            <br>-->
+<!--            <label> Fashion </label>-->
+<!--            <input type="checkbox" id="fashion" name="fashion" data-interest="fashion">-->
+<!--            <br>-->
+<!--            <label> Books </label>-->
+<!--            <input type="checkbox" id="books" name="books" data-interest="books">-->
+<!--            <br>-->
+<!--            <label> Movies/Film </label>-->
+<!--            <input type="checkbox" id="movies" name="movies" data-interest="movies">-->
+<!--            <br>-->
+<!--            <label> Health/Wellness </label>-->
+<!--            <input type="checkbox" id="health" name="health" data-interest="health">-->
+<!--            <br>-->
+<!--            <label> Food </label>-->
+<!--            <input type="checkbox" id="food" name="food" data-interest="food">-->
+<!--            <br>-->
+<!--            <label> Events </label>-->
+<!--            <input type="checkbox" id="events" name="events" data-interest="events">-->
+<!--        </div>-->
+<!--        <div>-->
+<!--            <button type="button" id="submit">Send Me A DODO</button>-->
+<!--            <input type="reset" id="reset">-->
+<!--        </div>-->
     </form>
 </div>
 <br>
