@@ -12,33 +12,38 @@ import java.util.Objects;
 public class Data {
 
     @PostMapping("/userlogin")
-    public String processLogin(@RequestParam String username, String password){
-
-        boolean flip = false;
-        boolean flop = false;
-//        package data and send to Models to perform operations listed below?
+    public String processLogin(@RequestParam String loginName, String loginPass){
+//        package data and send to Models to perform operations         listed below?
 //
-//        if username is found in database, and if password matches saved password for said username, then success! and if successful:
-//        return "usernest";
+//        if username is found in database, and if password             matches saved password for said username, then                success! and if successful:
+//          return "usernest";
 //
 //        however, if unsuccessful:
-//        return "login";
+//          return "login";
 
            //  TESTING METHODS:
-            if (Objects.equals(username, Scratch.getUsername())) {
-                flip = true;
-            }
+        if (Objects.equals(loginName, Scratch.getUsername()) && Objects.equals(loginPass, Scratch.getPassword())){
+            return "usernest";
+        } else {
+            return "login-error";
+        }
 
-            if (Objects.equals(username, Scratch.getPassword())) {
-                flop=true;
-            }
 
-            if (flip && flop){
-                return "usernest";
-            } else {
-                System.out.println("Incorrect. Goodbye.");
-                return "login";
-            }
+//        boolean flip = false;
+//        boolean flop = false;
+//            if (Objects.equals(loginName, Scratch.getUsername())) {
+//                flip = true;
+//            }
+//
+//            if (Objects.equals(loginPass, Scratch.getPassword())) {
+//                flop=true;
+//            }
+//
+//            if (flip && flop){
+//                return "usernest";
+//            } else {
+//                return "login-error";
+//            }
 
 //           if ((Objects.equals(username, Scratch.getUsername())) && (Objects.equals(password, Scratch.getPassword()))) {
 //               System.out.println("Correct! Hello, finley.");

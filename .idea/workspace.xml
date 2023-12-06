@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aee710f2-08d3-4e9e-83b5-26348a45c93c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Scratch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/login-error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Data.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/login.html" afterDir="false" />
     </list>
@@ -60,8 +59,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Thymeleaf" />
-        <option value="Thymeleaf-Dodo" />
         <option value="Class" />
+        <option value="Thymeleaf-Dodo" />
       </list>
     </option>
   </component>
@@ -82,16 +81,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danielpritt/Desktop/Dev/re-dodo-1.0/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/styles&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/danielpritt/Desktop/Dev/re-dodo-1.0/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates",
+    "settings.editor.selected.configurable": "preferences.externalResources"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

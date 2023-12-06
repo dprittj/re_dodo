@@ -59,7 +59,7 @@ window.addEventListener("load", function(){
 
         backButton.addEventListener("click", function(){
 
-            window.location.replace("login");
+            window.location.assign("login");
 
         });
 
@@ -102,7 +102,7 @@ window.addEventListener("load", function(){
 
         backButton.addEventListener("click", function(){
 
-            window.location.replace("login");
+            window.location.assign("login");
 
         });
 
@@ -121,16 +121,10 @@ window.addEventListener("load", function(){
 
             // const thisPage = "dodo-login-register.html"
             const nextPage = "usernest";
-            window.location.replace(nextPage);
+            window.location.assign(nextPage);
 
         });
 
     });
-
-
-    // --- --- --- --- --- //
-    // --SOMETHING ELSE JS //
-    // --- --- --- --- --- //
-
 
 });
