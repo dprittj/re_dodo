@@ -93,8 +93,6 @@ public class Navigation {
     public static String newProfile(Model model){
         model.addAttribute("users", usersDB);
 
-        usersDB.add(new User("Daniel", "123456", "dprittj@gmail.com", 1234567890, Calendar.getInstance(), "STL"));
-
 //        usersDB.add(new User("Ashley", "123456", "ashley@gmail.com", 1234567890, Calendar.getInstance(), "STL"));
         return "usersDB";
     }

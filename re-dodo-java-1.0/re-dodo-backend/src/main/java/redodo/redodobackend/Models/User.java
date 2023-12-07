@@ -36,7 +36,6 @@ public class User {
         this.phone = aPhone;
         this.dob = aDob;
         this.homeCoords = aHomeCoords;
-
     }
 
     public User(String aUsername, int aUserId, String aPassword) {
@@ -103,6 +102,8 @@ public class User {
 //    phone = 1234567890;
 //    dob = Calendar.getInstance();
 //    homeCoords = "STL";
+
+//    "Daniel", "123456", "dprittj@gmail.com", 1234567890, Calendar.getInstance(),"STL"
 
 
 

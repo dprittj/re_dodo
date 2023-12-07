@@ -33,12 +33,11 @@ public class UserController {
 
     }
 
-
     @PostMapping("/registeruser")
     public static String processNewUser(@RequestParam Model model, String registerName, String registerPass, String email, Integer phone, Calendar birth, String homeCoords) {
-
+        model.addAttribute("users", usersDB);
         usersDB.add(new User(registerName, registerPass, email, phone, birth, homeCoords));
-        model.addAttribute("usersDB", usersDB);
+//        usersDB.add(new User(registerName, registerPass, email, phone, birth, homeCoords));
 
         return "profilebuild";
     }
