@@ -1,8 +1,14 @@
 package redodo.redodobackend.Controllers;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import redodo.redodobackend.Models.User;
+
+import java.util.Calendar;
+
+import static redodo.redodobackend.Models.User.usersDB;
 
 @Controller
 
@@ -83,10 +89,14 @@ public class Navigation {
     }
 
 
-    @GetMapping("dodo-user-nest/new")
-    public static String newProfile(){
-    //  takes user to new profile method in Nest controller
-        return "newUserNest.html";
+    @GetMapping("/usersDB")
+    public static String newProfile(Model model){
+        model.addAttribute("users", usersDB);
+
+        usersDB.add(new User("Daniel", "123456", "dprittj@gmail.com", 1234567890, Calendar.getInstance(), "STL"));
+
+//        usersDB.add(new User("Ashley", "123456", "ashley@gmail.com", 1234567890, Calendar.getInstance(), "STL"));
+        return "usersDB";
     }
 
 

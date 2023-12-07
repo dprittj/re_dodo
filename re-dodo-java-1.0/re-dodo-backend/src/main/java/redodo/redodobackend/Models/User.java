@@ -1,29 +1,35 @@
 package redodo.redodobackend.Models;
 
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Set;
 
 public class User {
 
-//    fields
+//  ---fields---
     private static String username;
     private static int userId;
     private static String password;
     private static String email;
-    private static int phone;
-    private static int dob;
-    private static int homeCoords;
+    private static Integer phone;
+    private static Calendar dob;
+    private static String homeCoords;
 
     private static Set<Interest> userInterests;
 
+    public static ArrayList<User> usersDB = new ArrayList<>();
 
 
-//    constructors
 
-    public User() {
+//  ---constructors---
 
-    }
+    public User() { }
 
-    public User(String aUsername, String aPassword, String aEmail, int aPhone, int aDob, int aHomeCoords) {
+    public User(String aUsername, String aPassword, String aEmail, Integer aPhone, Calendar aDob, String aHomeCoords) {
         this.username = aUsername;
         this.password = aPassword;
         this.email = aEmail;
@@ -39,7 +45,7 @@ public class User {
         this.userId = aUserId;
     }
 
-//    getters and setters
+//  ---getters & setters---
 
     public String getUsername() {
         return username;
@@ -73,20 +79,31 @@ public class User {
         this.phone = aPhone;
     }
 
-    public int getDob() {
+    public Calendar getDob() {
         return dob;
     }
 
-    public void setDob(int aDob) {
+    public void setDob(Calendar aDob) {
         this.dob = aDob;
     }
 
-    public int getHomeCoords() {
+    public String getHomeCoords() {
         return homeCoords;
     }
 
-    public void setHomeCoords(int aHomeCoords) {
+    public void setHomeCoords(String aHomeCoords) {
         this.homeCoords = aHomeCoords;
     }
+
+
+//  ---data/DB---
+//    username = "Daniel";
+//    password = "123456";
+//    email = "dprittj@gmail.com";
+//    phone = 1234567890;
+//    dob = Calendar.getInstance();
+//    homeCoords = "STL";
+
+
 
 }
