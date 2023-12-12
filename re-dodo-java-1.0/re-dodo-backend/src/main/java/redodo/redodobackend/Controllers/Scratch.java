@@ -1,5 +1,8 @@
 package redodo.redodobackend.Controllers;
 
+import redodo.redodobackend.Models.User;
+
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
@@ -15,5 +18,7 @@ public class Scratch {
     public static String getPassword() {
         return password;
     }
+
+//    public static ArrayList<User> usersDB = new ArrayList<>();
 
 }

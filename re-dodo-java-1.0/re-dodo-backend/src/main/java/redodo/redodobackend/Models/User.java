@@ -3,10 +3,7 @@ package redodo.redodobackend.Models;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Set;
+import java.util.*;
 
 public class User {
 
@@ -15,13 +12,11 @@ public class User {
     private static int userId;
     private static String password;
     private static String email;
-    private static Integer phone;
-    private static Calendar dob;
+//    private static Integer phone;
+    private static String dob;
     private static String homeCoords;
-
     private static Set<Interest> userInterests;
 
-    public static ArrayList<User> usersDB = new ArrayList<>();
 
 
 
@@ -29,11 +24,11 @@ public class User {
 
     public User() { }
 
-    public User(String aUsername, String aPassword, String aEmail, Integer aPhone, Calendar aDob, String aHomeCoords) {
+    public User(String aUsername, String aPassword, String aEmail, String aDob, String aHomeCoords) {
         this.username = aUsername;
         this.password = aPassword;
         this.email = aEmail;
-        this.phone = aPhone;
+//        this.phone = aPhone;
         this.dob = aDob;
         this.homeCoords = aHomeCoords;
     }
@@ -46,7 +41,7 @@ public class User {
 
 //  ---getters & setters---
 
-    public String getUsername() {
+    public static String getUsername() {
         return username;
     }
 
@@ -62,37 +57,46 @@ public class User {
         this.password = aPassword;
     }
 
-    public String getEmail() {
+    public static String getEmail() {
         return email;
     }
 
-    public void setEmail(String aEmail) {
-        this.email = aEmail;
+    public static void setEmail(String aEmail) {
+        email = aEmail;
     }
 
-    public int getPhone() {
-        return phone;
-    }
+//    public int getPhone() {
+//        return phone;
+//    }
 
-    public void setPhone(int aPhone) {
-        this.phone = aPhone;
-    }
+//    public void setPhone(int aPhone) {
+//        this.phone = aPhone;
+//    }
 
-    public Calendar getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Calendar aDob) {
-        this.dob = aDob;
+    public static void setDob(String aDob) {
+        dob = aDob;
     }
 
-    public String getHomeCoords() {
+    public static String getHomeCoords() {
         return homeCoords;
     }
 
-    public void setHomeCoords(String aHomeCoords) {
-        this.homeCoords = aHomeCoords;
+    public static void setHomeCoords(String aHomeCoords) {
+        homeCoords = aHomeCoords;
     }
+
+    public void addDetails(String username, String email, String dob, String homeCoords){
+       if (User.getUsername().equals(username)){
+           User.setEmail(email);
+           User.setDob(dob);
+           User.setHomeCoords(homeCoords);
+       }
+    }
+
 
 
 //  ---data/DB---

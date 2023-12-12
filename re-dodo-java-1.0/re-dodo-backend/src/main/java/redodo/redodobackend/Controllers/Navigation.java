@@ -8,7 +8,9 @@ import redodo.redodobackend.Models.User;
 
 import java.util.Calendar;
 
-import static redodo.redodobackend.Models.User.usersDB;
+//import static redodo.redodobackend.Controllers.Scratch.usersDB;
+//import static redodo.redodobackend.Models.User.allUsers;
+//import static redodo.redodobackend.Models.User.usersDB;
 
 @Controller
 
@@ -87,16 +89,5 @@ public class Navigation {
     //  kick to createNew data-controller;
     //  take user to newProfile controller to create profile
     }
-
-
-    @GetMapping("/usersDB")
-    public static String newProfile(Model model){
-        model.addAttribute("users", usersDB);
-
-//        usersDB.add(new User("Ashley", "123456", "ashley@gmail.com", 1234567890, Calendar.getInstance(), "STL"));
-        return "usersDB";
-    }
-
-
 
 }

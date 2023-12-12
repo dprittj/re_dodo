@@ -12,9 +12,10 @@
     <header th:replace="fragments :: header"></header>
 
     <section class="content">
+
         <div class="landingDiv" id="registerForm">
             <div class="hiddenDiv1" id="registerDiv">
-                <form action="/registeruser" method="POST" name="registerFields">
+                <form action="" method="post" id="regForm">
                     <div>
                         <label> Username <input type="text" id="registerName" name="registerName" placeholder="username" data-newName="newName"></label>
                     </div>
@@ -41,7 +42,7 @@
                     <br>
                     <div class="btns_div">
                         <ul class="btns_li">
-                            <li><button type="button" class="go-back-reset-btns" id="submitRegistration">Register</button></li>
+                            <li><button type="submit" class="go-back-reset-btns" id="submitRegistration" formaction="/regUser">Register</button></li>
                             <li><button class="go-back-reset-btns" type="button" id="return-btn1">Back</button></li>
                             <li><button class="go-back-reset-btns" type="reset" id="reset-btn-1">Reset</button></li>
                         </ul>
@@ -60,7 +61,7 @@
 
         <div class="landingDiv" id="loginForm">
             <div class="hiddenDiv2" id="loginDiv">
-                <form action="/userlogin" method="POST" name="loginFields">
+                <form action="/userlogin" method="POST">
                     <div>
                         <br>
                         <label> Username <input type="text" id="loginName" name="loginName" placeholder="username" data-name="name"></label>
@@ -81,6 +82,7 @@
                 </form>
             </div>
         </div>
+
     </section>
     <footer th:replace="fragments :: footer"></footer>
     </body>

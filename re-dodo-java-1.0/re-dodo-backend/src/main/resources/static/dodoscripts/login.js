@@ -20,7 +20,8 @@ window.addEventListener("load", function(){
         dodoCoords: "",
     };
 
-    // data
+// Data Fields //
+// --- --- --- //
     const loginUsername = document.getElementById("loginName");
     const loginPass = document.getElementById("loginPass");
     const registerUsername = document.getElementById("registerName");
@@ -30,19 +31,26 @@ window.addEventListener("load", function(){
     const birth = document.getElementById("birth");
     const coords = document.getElementById("coords");
 
-    // buttons
+// Button Variables //
+// --- ---  --- --- //
     const loginButton = document.getElementById("loginButton");
     const registerButton = document.getElementById("registerButton");
 
 
-    // divs
+// Div Variables //
+// ---  ---  --- //
     const visibleDiv = document.getElementById("visibleDiv");
     const regDiv = document.getElementById("registerDiv");
     const loginDiv = document.getElementById("loginDiv");
 
-    // preventDefault();
 
-    // listeners
+// Main Buttons //
+// --- ---- --- //
+
+    /*
+    Login Button
+    */
+
     loginButton.addEventListener("click", function(e){
         e.stopPropagation();
 
@@ -80,22 +88,30 @@ window.addEventListener("load", function(){
             // parseAuth = JSON.parse(userAuth);
 
             // console.log("parseAuth = " + parseAuth);
-
-//            window.location.replace("usernest");
-
-
-
+//           window.location.replace("usernest");
         });
-
     });
+
+    /*
+    Register Button does...
+    */
 
     registerButton.addEventListener("click", function(e){
         e.stopPropagation();
+
         visibleDiv.outerHTML = regDiv.outerHTML;
 
         const removeRegister = document.getElementsByClassName("hiddenDiv1");
 
+//        console.log(removeRegister);
+
         removeRegister[0].remove(document.getElementById("registerForm"));
+
+//        visibleDiv.outerHTML = regDiv.outerHTML;
+
+//        const regForm = document.getElementById("regForm");
+//        regForm.setAttribute("action", "/registeruser");
+//        regForm.setAttribute("method", "POST");
 
         const submit = document.getElementById("submitRegistration");
         const backButton = document.getElementById("return-btn1");
@@ -120,8 +136,8 @@ window.addEventListener("load", function(){
             console.log(ddNew);
 
             // const thisPage = "dodo-login-register.html"
-            const nextPage = "usernest";
-            window.location.assign(nextPage);
+//            const nextPage = "usernest";
+//            window.location.assign(nextPage);
 
         });
 

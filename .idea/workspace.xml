@@ -4,12 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aee710f2-08d3-4e9e-83b5-26348a45c93c" name="Changes" comment="">
+    <list default="true" id="7510ba3c-ac5c-460c-8046-f834d197a647" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/RegisterController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Models/Repositories/UserRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/re-dodo-java-1.0.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Navigation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Scratch.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/Scratch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/java/redodo/redodobackend/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/fragments.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/fragments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/sitemap.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/sitemap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/usersDB.html" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/userslist.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +83,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Thymeleaf" />
         <option value="Class" />
-        <option value="Thymeleaf-Dodo" />
       </list>
     </option>
   </component>
@@ -68,7 +91,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="n2f472lv" />
+    <option name="directoryName" value="douxrpa9" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,37 +99,29 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2XpV6bPg9nhOqbUOSLJyOjmpXAe" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2ZEpKB7Jue2CXgup8wYL4hPXPvr" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Gradle.re-dodo-backend [bootRun].executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danielpritt/Desktop/Dev/re-dodo-1.0/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalResources&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/templates/styles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static" />
-      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts" />
-      <recent name="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/styles" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="re-dodo-backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="re-dodo-backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" nameIsGenerated="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -120,37 +135,26 @@
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.re-dodo-backend [bootRun]" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.16-jbr_dcevm-11.0.16-8336523bb0d9-d82ba528" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="aee710f2-08d3-4e9e-83b5-26348a45c93c" name="Changes" comment="" />
-      <created>1699325834058</created>
+      <changelist id="7510ba3c-ac5c-460c-8046-f834d197a647" name="Changes" comment="" />
+      <created>1701997029656</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699325834058</updated>
+      <updated>1701997029656</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalStateException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
