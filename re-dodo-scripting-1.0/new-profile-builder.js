@@ -1,15 +1,11 @@
 window.addEventListener("load", function(e){
 
     const saveBtn = document.getElementById("saveInterests");
-
     const resetBtn = document.getElementById("reset");
-
     const allInterests = document.querySelectorAll("input[data-interest]");
-
     const interestArray = [];
 
     allInterests.forEach(function(input){
-
         input.addEventListener("click", function(e){
 
             const selection = e.currentTarget;
@@ -29,19 +25,13 @@ window.addEventListener("load", function(e){
     });
 
     resetBtn.addEventListener("click", function(){
-
         interestArray.splice(0);
         console.log(interestArray);
     })
 
     saveBtn.addEventListener("click", function(e){
-
         localStorage.setItem("interests", interestArray);
-
-        window.location.href = "dodo-user-nest.html";
+        window.location.assign("dodo-user-nest.html");
     });
-
-
-
 
 })

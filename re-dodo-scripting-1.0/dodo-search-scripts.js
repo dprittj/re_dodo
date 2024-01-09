@@ -72,21 +72,17 @@ window.addEventListener("load", function(e) {
         // adds values for stops and location to preferences object 
         preferences.stops = document.querySelector("input[data-stops]").value;
         preferences.userLocation = document.querySelector("input[data-location]").value;
-        
 
         // saves preferences object to local storage
         localStorage.setItem("preferences", JSON.stringify(preferences));
 
-
         // saves interests array to local storage
         localStorage.setItem("interests", interestArray);
-        
 
         // creates variable container for URL change with submit
-        const goToProfile = window.location.href.replace("dodo-search.html", "display-search-parameters.html");
+        const goToProfile = window.location.href.assign("display-search-parameters.html");
 
         // changes window to profile URL
         window.location.href = goToProfile;
     });
-
 });

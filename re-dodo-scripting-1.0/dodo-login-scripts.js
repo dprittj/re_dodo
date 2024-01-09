@@ -50,15 +50,11 @@ window.addEventListener("load", function(e){
         const backButton = document.getElementById("return-btn2");
 
         backButton.addEventListener("click", function(){
-
-            window.location.replace("dodo-login-register.html");
-
+            window.location.assign("dodo-login-register.html");
         });
 
         goButton.addEventListener("click", function(e){
-            
             ddData.dodoUser = document.querySelector("input[data-name]").value;
-    
             ddData.dodoPass = document.querySelector("input[data-pass]").value;
     
             // console.log("ddData = " + ddData);
@@ -66,17 +62,12 @@ window.addEventListener("load", function(e){
             localStorage.setItem("userAuth", JSON.stringify(ddData));
 
             // const userAuth = localStorage.getItem("userAuth");
-
             // console.log("userAuth = " + userAuth);
-
             // parseAuth = JSON.parse(userAuth);
-
             // console.log("parseAuth = " + parseAuth);
     
-            window.location.replace("dodo-user-nest.html");
-    
+            window.location.assign("dodo-user-nest.html");
         });
-
     });
 
     registerButton.addEventListener("click", function(e){
@@ -91,13 +82,10 @@ window.addEventListener("load", function(e){
         const backButton = document.getElementById("return-btn1");
 
         backButton.addEventListener("click", function(){
-
-            window.location.replace("dodo-login-register.html");
-
+            window.location.assign("dodo-login-register.html");
         });
 
         submit.addEventListener("click", function(e){
-    
             ddNew.dodoUser = document.querySelector("input[data-newName]").value;
             ddNew.dodoPass = document.querySelector("input[data-newPass]").value;
             ddNew.dodoEmail = document.querySelector("input[data-email]").value;
@@ -108,14 +96,10 @@ window.addEventListener("load", function(e){
             localStorage.setItem("newLogin", JSON.stringify(ddNew));
 
             console.log(ddNew);
-    
             // const thisPage = "dodo-login-register.html"
             const nextPage = "new-user-profile-build.html";
-            window.location.replace(nextPage);
+            window.location.assign(nextPage);
     
         });
-
     });
-
 });
-

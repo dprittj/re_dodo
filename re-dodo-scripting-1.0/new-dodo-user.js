@@ -9,15 +9,10 @@ window.addEventListener("DOMContentLoaded", function(load){
 
     const user = document.getElementById("username");
     const pass = document.getElementById("pass");
-
     const email = document.getElementById("email");
-
     const phone = document.getElementById("phone");
-
     const dob = document.getElementById("birth");
-
     const location = document.getElementById("coords");
-
     const userDetails = {
         UserCredentials: "",
         userEmail: "",
@@ -37,10 +32,6 @@ window.addEventListener("DOMContentLoaded", function(load){
         const sendDetails = localStorage.setItem("userDetails", userDetails);
 
         const nextPage = "dodo-search.html";
-        window.location.href.replace(nextPage);
-
-
+        window.location.href.assign(nextPage);
     })
-
-
 });

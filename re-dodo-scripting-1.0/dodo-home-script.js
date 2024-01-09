@@ -6,15 +6,13 @@ window.addEventListener("load", function(e){
 
     enterSite.addEventListener("click", function(click){
 
-        window.location.replace("dodo-login-register.html")
+        window.location.assign("dodo-login-register.html")
 
-        this.onclick;
     });
 
     enterSite2.addEventListener("click", function(click){
 
-        window.location.replace("dodo-login-register.html")
+        window.location.assign("dodo-login-register.html")
 
-        this.onclick;
     });
 });

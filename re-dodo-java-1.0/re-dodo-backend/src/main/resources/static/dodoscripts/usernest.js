@@ -7,15 +7,15 @@ window.addEventListener("load", function(){
     const goDodo = document.getElementById("goDodo");
 
     update.addEventListener("click", function(){
-        window.location.replace("profilebuild");
+        window.location.assign("profilebuild");
     });
 
-    more.addEventListener("click", function(){
-        window.location.replace("");
-    });
+    // more.addEventListener("click", function(){
+    //     window.location.assign("");
+    // });
 
     goDodo.addEventListener("click", function(){
-        window.location.replace("newdodo");
+        window.location.assign("newdodo");
     });
 
 });

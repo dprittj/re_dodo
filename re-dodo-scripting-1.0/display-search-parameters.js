@@ -18,7 +18,6 @@ function displayInterests(userInts){
             showItem.textContent = interestsArr[i];
             interestsList.appendChild(showItem);
     }
-
 }
 
 window.addEventListener("load", function(e){
@@ -33,7 +32,6 @@ window.addEventListener("load", function(e){
 
     const parsedPrefs = JSON.parse(userPreferences);
     console.log(parsedPrefs);
-
 
     const prefsDiv = document.querySelector("[data-preferences]");
     const prefsList = document.createElement("ul");

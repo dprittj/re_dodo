@@ -88,7 +88,7 @@ window.addEventListener("load", function(){
             // parseAuth = JSON.parse(userAuth);
 
             // console.log("parseAuth = " + parseAuth);
-//           window.location.replace("usernest");
+//           window.location.assign("usernest");
         });
     });
 

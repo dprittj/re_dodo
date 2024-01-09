@@ -21,7 +21,6 @@ window.addEventListener("load", function(e){
     const moreBtn = document.getElementById("view-more");
     const updateBtn = document.getElementById("update-interests");
     const dodoBtn2 = document.getElementById("gogoDODO2");
-
     const userInterests = localStorage.getItem("interests");
 
     displayInterests(userInterests);
@@ -33,24 +32,18 @@ window.addEventListener("load", function(e){
     // });
 
     dodoBtn1.addEventListener("click", function(e){
-        window.location.href = "dodo-search.html";
+        window.location.assign("dodo-search.html");
     });
 
     dodoBtn2.addEventListener("click", function(e){
-        window.location.href = "dodo-search.html";
+        window.location.assign("dodo-search.html");
     });
 
-    moreBtn.addEventListener("click", function(e){
-
-        window.location.href = "past-dodos.html";
-
+    moreBtn.addEventListener("click", function(click){
+        window.location.assign("past-dodos.html");
     });
 
-    updateBtn.addEventListener("click", function(e){
-
-        window.location.href = "interests-update.html";
-
+    updateBtn.addEventListener("click", function(click){
+        window.location.assign("interests-update.html");
     });
-
-
 });
