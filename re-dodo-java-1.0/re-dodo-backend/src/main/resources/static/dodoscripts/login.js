@@ -1,5 +1,4 @@
 window.addEventListener("load", function(){
-
     document.body.style.visibility = "visible";
 
 // --- --- --- --- --- //
@@ -36,13 +35,11 @@ window.addEventListener("load", function(){
     const loginButton = document.getElementById("loginButton");
     const registerButton = document.getElementById("registerButton");
 
-
 // Div Variables //
 // ---  ---  --- //
     const visibleDiv = document.getElementById("visibleDiv");
     const regDiv = document.getElementById("registerDiv");
     const loginDiv = document.getElementById("loginDiv");
-
 
 // Main Buttons //
 // --- ---- --- //
@@ -53,42 +50,30 @@ window.addEventListener("load", function(){
 
     loginButton.addEventListener("click", function(e){
         e.stopPropagation();
-
         visibleDiv.outerHTML = loginDiv.outerHTML;
-
         const removeForm = document.getElementsByClassName("hiddenDiv2");
-        // console.log(removeForm);
-
+         console.log(removeForm);
         removeForm[1].remove(document.getElementById("loginForm"));
-        // console.log(removeForm);
+         console.log(removeForm);
 
         const goButton = document.getElementById("goButton");
         const backButton = document.getElementById("return-btn2");
 
         backButton.addEventListener("click", function(){
-
             window.location.assign("login");
-
         });
 
         goButton.addEventListener("click", function(e){
-
             ddData.dodoUser = document.querySelector("input[data-name]").value;
-
             ddData.dodoPass = document.querySelector("input[data-pass]").value;
-
-            // console.log("ddData = " + ddData);
+             console.log("ddData = " + ddData);
 
             localStorage.setItem("userAuth", JSON.stringify(ddData));
-
-            // const userAuth = localStorage.getItem("userAuth");
-
-            // console.log("userAuth = " + userAuth);
-
-            // parseAuth = JSON.parse(userAuth);
-
-            // console.log("parseAuth = " + parseAuth);
-//           window.location.assign("usernest");
+             const userAuth = localStorage.getItem("userAuth");
+             console.log("userAuth = " + userAuth);
+             parseAuth = JSON.parse(userAuth);
+             console.log("parseAuth = " + parseAuth);
+            window.location.assign("usernest");
         });
     });
 
@@ -98,17 +83,11 @@ window.addEventListener("load", function(){
 
     registerButton.addEventListener("click", function(e){
         e.stopPropagation();
-
         visibleDiv.outerHTML = regDiv.outerHTML;
-
         const removeRegister = document.getElementsByClassName("hiddenDiv1");
-
-//        console.log(removeRegister);
-
+        console.log(removeRegister);
         removeRegister[0].remove(document.getElementById("registerForm"));
-
 //        visibleDiv.outerHTML = regDiv.outerHTML;
-
 //        const regForm = document.getElementById("regForm");
 //        regForm.setAttribute("action", "/registeruser");
 //        regForm.setAttribute("method", "POST");
@@ -117,9 +96,7 @@ window.addEventListener("load", function(){
         const backButton = document.getElementById("return-btn1");
 
         backButton.addEventListener("click", function(){
-
             window.location.assign("login");
-
         });
 
         submit.addEventListener("click", function(e){
@@ -134,13 +111,9 @@ window.addEventListener("load", function(){
             localStorage.setItem("newLogin", JSON.stringify(ddNew));
 
             console.log(ddNew);
-
             // const thisPage = "dodo-login-register.html"
-//            const nextPage = "usernest";
-//            window.location.assign(nextPage);
-
+            const nextPage = "usernest";
+            window.location.assign(nextPage);
         });
-
     });
-
 });

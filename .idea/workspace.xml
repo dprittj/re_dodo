@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7510ba3c-ac5c-460c-8046-f834d197a647" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hideFormTest/hideFormTest_v1_01.html" beforeDir="false" afterPath="$PROJECT_DIR$/hideFormTest/hideFormTest_v1_01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/homenest.js" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/homenest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/re-dodo-java-1.0/re-dodo-backend/src/main/resources/static/dodoscripts/login.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
